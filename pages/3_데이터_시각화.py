@@ -5,11 +5,20 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as font_manager
 import plotly.express as px
 import plotly.graph_objects as go
+import os
 
 # 한글 폰트 설정 (matplotlib용)
-font_path = '/workspaces/260318-fullsun/fonts/static/NotoSansKR-Regular.ttf'
-font_manager.fontManager.addfont(font_path)
-plt.rcParams['font.family'] = 'Noto Sans KR'
+# 현재 파일 기준으로 상대 경로 설정
+current_dir = os.path.dirname(os.path.abspath(__file__))
+font_path = os.path.join(current_dir, '../fonts/static/NotoSansKR-Regular.ttf')
+
+if os.path.exists(font_path):
+    font_manager.fontManager.addfont(font_path)
+    plt.rcParams['font.family'] = 'Noto Sans KR'
+else:
+    # 폰트 파일이 없을 경우 시스템 폰트 사용
+    plt.rcParams['font.family'] = 'DejaVu Sans'
+
 plt.rcParams['axes.unicode_minus'] = False
 
 st.title("데이터 시각화 페이지")
