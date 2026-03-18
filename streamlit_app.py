@@ -1,6 +1,30 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+st.set_page_config(page_title="인천대 수학교육과 소개", page_icon="🏫")
+
+st.title("🏫 인천대학교 수학교육과 소개")
+
+st.markdown("""
+### 학과 개요
+인천대학교 수학교육과는 수학 교육 전문가 양성을 목표로 하는 학과입니다. 중등학교 수학 교사를 비롯하여 수학 교육 연구자, 교육 콘텐츠 개발자 등 다양한 분야의 전문 인력을 양성합니다.
+
+### 교육 목표
+- 수학적 사고력과 문제 해결 능력 배양
+- 효과적인 수학 교육 방법론 습득
+- 교육 현장에서의 실무 능력 개발
+- 수학 교육 연구 역량 강화
+
+### 주요 커리큘럼
+- 수학 기초 이론 (대수학, 기하학, 해석학 등)
+- 수학교육학 (교육심리학, 교수학습론)
+- 교육 실습 및 현장 경험
+- 연구 방법론 및 논문 작성
+
+### 졸업 후 진로
+- 중등학교 수학 교사
+- 수학 교육 연구원
+- 교육 출판 및 콘텐츠 개발
+- 대학원 진학 (수학교육 전공)
+
+더 자세한 정보는 [인천대학교 홈페이지](https://www.incheon.ac.kr)를 참고하세요.
+""")

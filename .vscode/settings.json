@@ -1,0 +1,9 @@
+{
+    "python-envs.pythonProjects": [
+        {
+            "path": "pages/3_데이터_시각화.py",
+            "envManager": "ms-python.python:venv",
+            "packageManager": "ms-python.python:pip"
+        }
+    ]
+}
